@@ -45,6 +45,11 @@ BULLETTRAIN_PROMPT_ORDER=(
 
 ### Tilix
 
+Install:
+```sh
+yaourt -S tilix
+```
+
 Fix for VTE Terminal issue:
 
 ```sh
@@ -58,3 +63,9 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 ```
 
+
+For Ubuntu additionally run:
+
+```sh
+ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+```
