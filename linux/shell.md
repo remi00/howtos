@@ -3,6 +3,7 @@
 Start with making sure pip is the newest one:
 
 ```sh
+yaourt -S python-pip
 pip install --upgrade pip
 ```
 
@@ -12,6 +13,7 @@ pip install --upgrade pip
 Install Oh My Zsh
 
 ```sh
+yaourt -S zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
