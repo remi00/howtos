@@ -11,4 +11,8 @@ git config --global alias.staash 'stash --include-untracked'
 git config --global alias.staaash 'stash --all'
 git config --global alias.shorty 'status --short --branch'
 git config --global alias.grog 'log --graph --abbrev-commit --decorate --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"'
+
+git config --global alias.ls 'log --pretty=format:"%C(yellow)%h %C(cyan)%ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --date=short'
+git config --global alias.ll 'log --pretty=format:"%C(yellow)%h %C(cyan)%ad%Cred%d %Creset%s%Cblue [%cn]" --decorate --numstat --date=rfc'
+
 ```
