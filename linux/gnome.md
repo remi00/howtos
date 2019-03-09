@@ -12,3 +12,13 @@ Remove CTRL+ALT+D showing desktop - conflicting keyshortcut:
 ```
 org / gnome / desktop / wm / keybindings / show-desktop
 ```
+
+### Gnome extensions
+
+```
+yaourt -S chrome-gnome-shell
+```
+
+#### List
+
+- [AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/) - useful when using [OverGrive](https://www.thefanclub.co.za/overgrive/installation-instructions-arch-linux)

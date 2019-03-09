@@ -22,6 +22,10 @@ server_ip_address:/nfs /mnt/nas nfs user,rsize=8192,wsize=8192,bg,timeo=14,intr 
 Better automount with `systemd` - add to `/etc/fstab`:
 
 ```sh
+# For desktop (with auto mount)
+server_ip_address:/nfs /mnt/nas nfs noatime,nodiratime,x-systemd.automount,x-systemd.device-timeout=5min,timeo=14,x-systemd.idle-timeout=1min 0 0
+
+# For laptop (no auto mount)
 server_ip_address:/nfs /mnt/nas nfs noauto,noatime,nodiratime,x-systemd.automount,x-systemd.device-timeout=5min,timeo=14,x-systemd.idle-timeout=1min 0 0
 ```
 
